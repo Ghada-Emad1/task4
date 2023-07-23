@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="bg-Almost_White font-Epil relative" id="body">
+ <header class="sm:flex items-center justify-between sm:m-7">
+  <div class="sm:flex">
+   <div class="sm:mr-20 flex items-center justify-between m-2 sm:m-0">
+    <img src="/imgs/logo.svg"/>
+    <span><ion-icon name="menu" class="sm:hidden text-3xl font-bold " onclick="Closing(this)" id="menu"></ion-icon></span>
+   </div>
+   <ul class="sm:flex sm:space-x-6 text-Medium_Gray absolute sm:static right-0 w-1/2 sm:w-auto
+     h-full sm:h-0 top-0 pt-14 sm:pt-0 space-y-4 sm:space-y-0 font-Epil cursor-pointer bg-white sm:bg-inherit pl-5 sm:pl-0
+     z-[-1] sm:z-auto hidden transition-all ease-in-out duration-150" id="show-list">
+    <li>
+      <div class="flex items-center"> 
+        Feature
+        <ion-icon name="chevron-down" class="pl-2" onclick="Show_feat(this)"></ion-icon>
+      </div>
+      <ul class="space-y-3 mt-2 ml-2 sm:ml-0 sm:bg-white sm:p-4 sm:rounded-lg sm:shadow-lg hidden" id="show-feat">
+        <li class="flex items-center"><img src="/imgs/icon-todo.svg" class="pr-2">To do list</li>
+        <li class="flex items-center"><img src="/imgs/icon-reminders.svg" class="pr-2">Reminder</li>
+        <li class="flex items-center"><img src="/imgs/icon-calendar.svg" class="pr-2">Calender</li>
+        <li class="flex items-center"><img src="/imgs/icon-planning.svg" class="pr-2">Planning</li>
+      </ul>
+    </li>
+    <li>
+      <div class="flex items-center">
+        Company
+        <ion-icon name="chevron-down" class="pl-2" onclick="Show_comp(this)"></ion-icon>
+        </div>
+        <ul class="space-y-3 mt-3 ml-2 sm:ml-0 sm:bg-white sm:p-4 sm:shadow-lg sm:rounded-lg
+        hidden" id="show-comp">
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Blog</li>
+        </ul>
+    </li>
+    <li>Career</li>
+    <li>About</li>
+   </ul>
+  </div>
+
+  <div>
+    <ul class="sm:flex sm:space-x-6 text-Medium_Gray cursor-pointer hidden items-center">
+      <li class="hover:opacity-50">Login</li>
+      <li class=" border border-Almost_Black px-6 py-2 hover:text-white hover:bg-Almost_Black rounded-md duration-75">Register</li>
+    </ul>
+  </div>
+ </header>
+ 
+
+ <div
+ class="sm:flex-row-reverse flex flex-col sm:px-20 sm:justify-center justify-evenly md:px-20 lg:px-24 z-10"
+>
+ <img
+   src="/imgs/image-hero-mobile.png"
+   alt="hero image mobile"
+   class="mb-4 mt-2 sm:hidden"
+ />
+ <img
+   src="/imgs/image-hero-desktop.png"
+   alt="hero image desktop"
+   class="mb-4 mt-2 hidden sm:block h-[85vh] p-5"
+ />
+ <div
+   class="p-5 text-center sm:text-left sm:w-1/2 sm:p-10 flex flex-col sm:mr-36 justify-evenly"
+ >
+   <h1
+     class="font-bold text-3xl mb-10 mt-10 sm:text-5xl  lg:text-7xl"
+   >
+     <span class="lg:block">Make</span> remote work
+   </h1>
+   <p
+     class="text-Medium_Gray text-sm sm:text-lg lg:text-md sm:w-[25rem] mb-10"
+   >
+     Get your team in sync, no matter your location. Streamline processes,
+     create team rituals, and watch productivity soar.
+   </p>
+   <button
+   class="cursor-pointer text-white font-semibold  text-sm w-28 py-2 bg-Almost_Black rounded-xl m-auto sm:m-0 hover:bg-Almost_White hover:text-Almost_Black border-2 border-Almost_Black text-center sm:py-3 sm:w-32 sm:text-md">
+   Learn more
+  </button>
+   <div class="flex flex-wrap justify-between mt-14">
+     <img
+       src="/imgs/client-databiz.svg"
+       alt="databiz"
+       class="w-1/5 h-5 object-contain"
+     />
+     <img
+       src="/imgs/client-audiophile.svg"
+       alt="client-audiophile"
+       class="w-1/5 h-5 object-contain"
+     />
+     <img
+       src="/imgs/client-meet.svg"
+       alt="meet"
+       class="w-1/5 h-5 object-contain"
+     />
+     <img
+       src="/imgs/client-maker.svg"
+       alt="maker"
+       class="w-1/5 h-5 object-contain"
+     />
+   </div>
+ </div>
+</div>
+
+  <script src="/script/main.js"></script>
+</body>
+</html>
