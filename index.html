@@ -13,17 +13,17 @@
   <div class="sm:flex">
    <div class="sm:mr-20 flex items-center justify-between m-2 sm:m-0">
     <img src="imgs/logo.svg"/>
-    <span><ion-icon name="menu" class="sm:hidden text-3xl font-bold " onclick="Closing(this)" id="menu"></ion-icon></span>
+    <span><ion-icon name="menu" class="sm:hidden text-3xl font-bold z-30" onclick="Closing(this)" id="menu"></ion-icon></span>
    </div>
    <ul class="sm:flex sm:space-x-6 text-Medium_Gray absolute sm:static right-0 w-1/2 sm:w-auto
      h-full sm:h-0 top-0 pt-14 sm:pt-0 space-y-4 sm:space-y-0 font-Epil cursor-pointer bg-white sm:bg-inherit pl-5 sm:pl-0
-     z-[-1] sm:z-auto hidden transition-all ease-in-out duration-150" id="show-list">
+     z-[1] sm:z-auto hidden transition-all ease-in-out duration-150" id="show-list">
     <li>
-      <div class="flex items-center"> 
+      <div class="flex items-center "> 
         Feature
         <ion-icon name="chevron-down" class="pl-2" onclick="Show_feat(this)"></ion-icon>
       </div>
-      <ul class="space-y-3 mt-2 ml-2 sm:ml-0 sm:bg-white sm:p-4 sm:rounded-lg sm:shadow-lg hidden" id="show-feat">
+      <ul class="space-y-3 mt-2 ml-2  sm:ml-0 sm:bg-white sm:p-4 sm:rounded-lg sm:shadow-lg hidden" id="show-feat">
         <li class="flex items-center"><img src="imgs/icon-todo.svg" class="pr-2">To do list</li>
         <li class="flex items-center"><img src="imgs/icon-reminders.svg" class="pr-2">Reminder</li>
         <li class="flex items-center"><img src="imgs/icon-calendar.svg" class="pr-2">Calender</li>
@@ -50,7 +50,7 @@
   <div>
     <ul class="sm:flex sm:space-x-6 text-Medium_Gray cursor-pointer hidden items-center">
       <li class="hover:opacity-50">Login</li>
-      <li class=" border border-Almost_Black px-6 py-2 hover:text-white hover:bg-Almost_Black rounded-md duration-75">Register</li>
+      <li class=" border border-Almost_Black px-6 py-2 hover:bg-black hover:text-white rounded-md duration-75">Register</li>
     </ul>
   </div>
  </header>
@@ -84,7 +84,7 @@
      create team rituals, and watch productivity soar.
    </p>
    <button
-   class="cursor-pointer text-white font-semibold  text-sm w-28 py-2 bg-Almost_Black rounded-xl m-auto sm:m-0 hover:bg-Almost_White hover:text-Almost_Black border-2 border-Almost_Black text-center sm:py-3 sm:w-32 sm:text-md">
+   class="cursor-pointer text-Almost_Black font-semibold  text-sm w-28 py-2 bg-Almost_Black rounded-xl m-auto sm:m-0 hover:bg-black hover:text-white  border-2 border-Almost_Black text-center sm:py-3 sm:w-32 sm:text-md">
    Learn more
   </button>
    <div class="flex flex-wrap justify-between mt-14">
